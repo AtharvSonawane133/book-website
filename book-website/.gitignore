@@ -1,0 +1,130 @@
+# ============================================================================
+# React-Vite + Tailwind CSS Production-Ready .gitignore
+# ============================================================================
+# This file excludes build artifacts, dependencies, logs, and local configs
+# to maintain a clean Git history and protect sensitive information.
+
+# ============================================================================
+# 1. DEPENDENCIES
+# ============================================================================
+# Node.js package manager files and installed modules
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnpm-store/
+
+# ============================================================================
+# 2. BUILD OUTPUT
+# ============================================================================
+# Production and development build directories
+dist/
+dist-ssr/
+build/
+out/
+*.local
+
+# Vite cache and metadata
+.vite/
+
+# TypeScript build outputs (if applicable)
+*.tsbuildinfo
+
+# ============================================================================
+# 3. LOGS & CACHES
+# ============================================================================
+# Log files from various package managers and tools
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# General log files
+logs
+*.log
+*.logs
+
+# ESLint and other linter caches
+.eslintcache
+.stylelintcache
+
+# Vite dev server cache
+.vite-cache/
+
+# ============================================================================
+# 4. ENVIRONMENT VARIABLES
+# ============================================================================
+# Local environment files with sensitive data (API keys, secrets, etc.)
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# NOTE: .env and .env.example should be tracked in Git to document
+# required environment variables for the team.
+
+# ============================================================================
+# 5. OPERATING SYSTEM & IDE CLUTTER
+# ============================================================================
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+.workspace
+*.swn
+
+# JetBrains IDEs
+*.iml
+*.iws
+*.ipr
+
+# VS Code specific
+.vscode/settings.json
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# Visual Studio specific
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ============================================================================
+# 6. TESTING
+# ============================================================================
+# Test coverage and results
+coverage/
+.nyc_output/
+*.lcov
+.jest-cache/
+
+# ============================================================================
+# 7. MISC
+# ============================================================================
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# System lock files
+.lock
+
+# ============================================================================
+# END OF GITIGNORE
+# ============================================================================
